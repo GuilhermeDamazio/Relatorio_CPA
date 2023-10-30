@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório CPA</title>
+    <!--integração do bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <!--Integração do charts e seu plugin-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script type="module" src="scriptTeste.js"></script>
+</head>
+<body>
+
+    <header>
+        <H1>Relatório CPA - 2023</H1>
+
+        <div class="container">
+            <img src="imagens/logoInstituto.png" alt="Logo do IFSP - Campus Bragança Paulista" class="IFSP">
+            <img src="imagens/LogoCPA-removebg-preview.png" alt="Logo da CPA" class="CPA">
+          </div>
+    </header>
+
+    <p>Light mode / Dark mode</p>
+    <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+    </div>
+
+        <main>
+
+            <p>Selecione o eixo e a questão, respectivamente:</p>
+
+            <div class="Eixo">
+                <label for="eixo">Eixo</label>
+                <select name="" id="eixo">
+
+                </select>
+            </div>
+        
+            <div class="Pergunta">
+                <label for="pergunta">Pergunta</label>
+                <select name="" id="pergunta">
+                </select>
+            </div>
+
+            <div class="container">
+                <h3>E1Q1. Qual o seu nível de conhecimento sobre a Comissão Própria de Avaliação (CPA) do seu Câmpus </h3>
+                <h4>Figura 03 - Gráfico das respostas da questão 1 do eixo 1 por categoria.</h4>
+                <canvas id="orders"></canvas>
+                <h4>Gráfico das respostas da questão 1 do eixo 1  por curso:</h4>
+                <canvas id="cursos" style="margin-top: 20px;"></canvas>
+            </div>
+
+            <hr>
+            
+        </main>
+
+        <br>
+
+        <aside>
+            <h2>Objetivos da CPA</h2>
+
+        <p>A  CPA (Comissão Própria de Avaliação) é responsável por articular e coordenar a avaliação interna da instituição (autoavaliação institucional). A Comissão é formada por diferentes membros, representantes dos vários segmentos da comunidade acadêmica (professores, estudantes e técnico-administrativos) e da sociedade civil organizada.
+            Basicamente, a CPA, por meio dos processos de autoavaliação institucional, busca gerar em sua comunidade a autoconsciência de suas potencialidades, dos seus problemas e desafios. E, desse modo, espera-se que haja envolvimento e participação de todos e todas no desenvolvimento das ações necessárias para a melhoria da qualidade acadêmica e o desenvolvimento institucional.
+        </p>
+
+        <p>Para saber mais acesse: <a href="https://bra.ifsp.edu.br/cpa" target="_blank" >https://bra.ifsp.edu.br/cpa</a></p>
+
+        </aside>
+    
+        <div class="container-fluid">
+            <footer>
+                <p>Site desenvolvido por Guilherme Damazio</p>
+                <p>Disciplina: BRAEXT 2 - 2° Sem.2023</p>
+             </footer>
+          </div>
+
+</body>
+</html>
