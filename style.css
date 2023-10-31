@@ -237,21 +237,21 @@ main.dark h3, h4{
     
 
     main{
-        max-width: 400px;
+        max-width: 360px;
         margin-right: 0px;
 
         
     }
 
     aside{
-        max-width: 750px;
+        max-width: 360px;
         margin-left: 15px;
         margin-right: 15px;
         
     }
 
     footer{
-        max-width: 750px;
+        max-width: 360px;
         
     }
 
@@ -265,7 +265,15 @@ main.dark h3, h4{
         position: absolute;
         margin-bottom: 0px;
         margin-left: 00px;
+        padding-left: 3px;
+        padding-right: 0px
     }
+
+    header{max-width: 360px;}
+
+    body{max-width: 360px;}
+
+    
  }
 
  
